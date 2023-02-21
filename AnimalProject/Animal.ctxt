@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Animal
+comment1.params=
+comment1.target=Animal()
+comment2.params=animalType
+comment2.target=Animal(java.lang.String)
+comment2.text=-----------------------------------------------------------------\r\n\ \ Creates\ a\ Animal\ with\ the\ given\ type.\r\n
+comment3.params=
+comment3.target=java.lang.String\ getType()
+comment3.text=-----------------------------------------------------------------\r\n\ \ Returns\ this\ Animals\ type.\r\n/
+comment4.params=
+comment4.target=java.lang.String\ move()
+comment4.text=-----------------------------------------------------------------\r\n\ This\ method\ should\ return\ a\ string\ indicating\ how\ this\ pet\ moves.\r\n/
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=-----------------------------------------------------------------\r\n\ Returns\ a\ string\ representation\ of\ this\ Animal.\r\n/
+numComments=6
