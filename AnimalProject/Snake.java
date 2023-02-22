@@ -1,17 +1,12 @@
 public class Snake extends Reptile{
     private int length;
 
-    //-----------------------------------------------------------------
-    // Creates a snake with the given name and length.
-    //-----------------------------------------------------------------
-    public Snake( int snakeLength){
-        super(0);
+
+    public Snake(int snakeLength){
+        super("Snake", 0);
         length = snakeLength;
     }
 
-    //-----------------------------------------------------------------
-    // Returns this snake's length.
-    //-----------------------------------------------------------------
     public int getLength(){
         return length;
     }
@@ -20,7 +15,9 @@ public class Snake extends Reptile{
     // Returns a string representation of this snake.
     //-----------------------------------------------------------------
     public String toString(){
-        return super.toString() + "\n is a snake, " + length + " inches long";
+        String data = super.toString();
+        data += "Is a snake of length " + this.length + "\n";
+        return data;
     }
 
     //-----------------------------------------------------------------

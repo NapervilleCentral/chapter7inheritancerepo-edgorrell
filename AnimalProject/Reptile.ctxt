@@ -2,9 +2,8 @@
 comment0.target=Reptile
 comment1.params=
 comment1.target=Reptile()
-comment2.params=numLegs
-comment2.target=Reptile(int)
-comment2.text=-----------------------------------------------------------------\r\n\ \ Creates\ a\ reptile\ with\ n\ Legs.\r\n
+comment2.params=species\ numLegs
+comment2.target=Reptile(java.lang.String,\ int)
 comment3.params=
 comment3.target=int\ getLegs()
 comment3.text=-----------------------------------------------------------------\r\n\ \ Returns\ this\ Reptiles\ number\ of\ Legs\r\n/

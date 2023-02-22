@@ -1,9 +1,9 @@
-public  abstract class Animal{
-    public String type;
+public abstract class Animal{
+    protected String type;
+    protected boolean poisoned;
 
     public Animal(){
         type = "Default";
-        System.out.println("hello from Animal Default"  );
     }
 
     /**-----------------------------------------------------------------
@@ -11,8 +11,6 @@ public  abstract class Animal{
      */
     public Animal(String animalType){
         type = animalType;
-
-        System.out.println("hello from Animal");
     }
 
     /**-----------------------------------------------------------------
@@ -31,8 +29,7 @@ public  abstract class Animal{
      * Returns a string representation of this Animal.
     /*/
     public String toString(){
-        String data = "My type is " + type;
-        return data;  
+        return this.type + ": \n";
     }
 }
 

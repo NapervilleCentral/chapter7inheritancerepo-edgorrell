@@ -1,21 +1,15 @@
 public abstract class Reptile extends Animal{
+    private String species;
     private int numberOfLegs;
 
     public Reptile(){
-        //call the default constructor of Animal
-        //happens automatic
-        //super();
-
         super("Reptile");
-        type = "reptile"; // private data will cause error
         numberOfLegs = 0;
     }
-
-    /**-----------------------------------------------------------------
-     *  Creates a reptile with n Legs.
-     */
-    public Reptile(int numLegs){
-        super("reptile");
+    
+    Reptile(String species, int numLegs){
+        super("Reptile");
+        this.species = species;
         numberOfLegs = numLegs;
     }
     
@@ -37,7 +31,7 @@ public abstract class Reptile extends Animal{
      * Returns a string representation of this Animal.
     /*/
     public String toString(){
-        return super.toString() +
-        "\nI have "+getLegs()+ " number of Legs";
+        String data = super.toString();
+        return data;
     }
 }
