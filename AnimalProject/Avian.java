@@ -1,3 +1,3 @@
-public abstract class Avian{
+public abstract class Avian extends Animal{
     
 }
