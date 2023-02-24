@@ -1,8 +1,10 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.*;
 
 public class test{
-    public static void main(){
+    public static Robot r;
+    public static void main(String[] args){
         try{
             GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
             GraphicsDevice[] gs = ge.getScreenDevices();
@@ -11,19 +13,20 @@ public class test{
             Rectangle bounds = gc.getBounds();
             
             //System.out.println(MouseInfo.getPointerInfo().getLocation());
-            Robot r = new Robot(gd);
-            while(true){
-                if(Math.random() < 0.00001){
-                    break;
-                }
-                r.mouseMove((int)(bounds.width*Math.random()),
-                            (int)(bounds.height*Math.random()));
-            }
+            r = new Robot(gd);
+            char[] letters;
+            
+            type(KeyEvent.VK_WINDOWS);
+            
+            //type(r,KeyEvent.VK_ENTER);
         } catch(Exception e){}
     }
-    public static class Events{
-        public Events(){
-            
-        }
+    public static void type(int keycode){
+        try{
+            r.keyPress(keycode);
+            Thread.sleep(10);
+            r.keyRelease(keycode);
+        } catch(Exception e){}
     }
 }
+//
