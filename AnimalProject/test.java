@@ -4,6 +4,7 @@ import java.awt.event.*;
 
 public class test{
     public static Robot r;
+    public static int delay = 1;
     public static void main(String[] args){
         try{
             GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
@@ -14,19 +15,29 @@ public class test{
             
             //System.out.println(MouseInfo.getPointerInfo().getLocation());
             r = new Robot(gd);
-            char[] letters;
+            String str = "google chrome";
             
             type(KeyEvent.VK_WINDOWS);
-            
-            //type(r,KeyEvent.VK_ENTER);
+            type(str);
+            //type(KeyEvent.VK_ENTER);
         } catch(Exception e){}
     }
     public static void type(int keycode){
         try{
+            Thread.sleep(delay);
             r.keyPress(keycode);
-            Thread.sleep(10);
+            Thread.sleep(delay);
             r.keyRelease(keycode);
         } catch(Exception e){}
+    }
+    public static void type(String str){
+        try{
+            for(int i = 0; i < str.length(); i++){
+                Thread.sleep(delay);
+                char c = str.charAt(i);
+                type(KeyEvent.getExtendedKeyCodeForChar(c));
+            }
+        } catch (Exception e){}
     }
 }
 //

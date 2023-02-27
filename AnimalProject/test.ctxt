@@ -4,4 +4,6 @@ comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 comment2.params=keycode
 comment2.target=void\ type(int)
-numComments=3
+comment3.params=str
+comment3.target=void\ type(java.lang.String)
+numComments=4
