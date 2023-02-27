@@ -1,31 +1,13 @@
-
-/**
- * Write a description of class Lab here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Lab extends Dog
-{
-    //from Pet we get the name - Protected
-    //from Dog we get the weight - Private
-    
+public class Lab extends Dog{
     private String color;
 
-    /**
-     * Constructor for objects of class Lab
-     */
-    public Lab(int DogWeight, String LabColor, String DogName)
-    {
-        
-        // initialise instance variables
-        super(DogName, DogWeight);
-        color = LabColor;
-        
+    public Lab(String name, double weight, String color){
+        super(name, weight);
+        this.color = color;
     }
-    public String toString()
-    {
-        retrun (super.toString() + "and is a "+ color + " labrador");
+    public String toString(){
+        String data = super.toString();
+        data += "\n  " + this.color;
+        return data;
     }
-
 }
