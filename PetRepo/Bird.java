@@ -10,6 +10,9 @@ public class Bird extends Pet{
         data += "\n  Wingspan: " + this.wingspan;
         return data;
     }
+    public int getWingspan(){
+        return this.wingspan;
+    }
     public String speak(){
         return "tweet";
     }
