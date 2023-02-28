@@ -23,7 +23,9 @@ public class Kennel{
             }
             clear();
             if(choice == -1){
-                break;
+                System.out.println("idk");
+                scan.nextLine();
+                System.exit(0);
             }
             if(choice == 1){
                 

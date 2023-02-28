@@ -13,6 +13,7 @@ public abstract class Pet{
     public String toString(){
         String data = this.getName();
         data += "\n  " + this.getClass();
+        data = data.replace("class ","");
         return data;
     }
     abstract public String speak();
