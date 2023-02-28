@@ -7,7 +7,7 @@ public class Cat extends Pet{
     }
     public String toString(){
         String data = super.toString();
-        data += "\n  " + this.mood;
+        data += "\n  Mood: " + this.mood;
         return data;
     }
     public String speak(){

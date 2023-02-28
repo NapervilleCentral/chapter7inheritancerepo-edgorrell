@@ -7,7 +7,7 @@ public class Lab extends Dog{
     }
     public String toString(){
         String data = super.toString();
-        data += "\n  " + this.color;
+        data += "\n  Color: " + this.color;
         return data;
     }
 }

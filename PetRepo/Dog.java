@@ -7,7 +7,7 @@ public class Dog extends Pet{
     }
     public String toString(){
         String data = super.toString();
-        data += "\n  " + this.weight;
+        data += "\n  Weight: " + this.weight;
         return data;
     }
     public String speak(){
