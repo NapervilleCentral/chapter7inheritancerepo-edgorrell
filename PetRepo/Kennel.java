@@ -13,7 +13,7 @@ public class Kennel{
         for(int i = 0; i < 10; i++){
             name = "";
             for(int j = 0; j < 10; j++){
-                if(Math.random() < 0.2){
+                if(Math.random() < 0.4){
                     continue;
                 }
                 name += (char)(97 + 26*Math.random());
@@ -100,7 +100,7 @@ public class Kennel{
                 check = false;
                 index = -1;
                 for(Pet pet : kennel){
-                    if(pet.name.equals(name) && (pet.getClass()+"").equals("class " + types[choice-1])){
+                    if(pet.getName().equals(name) && (pet.getClass()+"").equals("class " + types[choice-1])){
                         index = kennel.indexOf(pet);
                         check = true;
                         break;

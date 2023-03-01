@@ -16,9 +16,6 @@ public abstract class Pet implements Comparable{
         data = data.replace("class ","");
         return data;
     }
-    public boolean equals(Pet p){
-        return this.name.equals(p.name);
-    }
     public int compareTo(Object o){
         Pet p = (Pet) o;
         String s1, s2;
