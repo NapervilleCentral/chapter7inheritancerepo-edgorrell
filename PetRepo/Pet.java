@@ -1,4 +1,4 @@
-public abstract class Pet implements Comparable<Pet>{
+public abstract class Pet implements Comparable{
     protected String name;
 
     public Pet(){
@@ -19,7 +19,8 @@ public abstract class Pet implements Comparable<Pet>{
     public boolean equals(Pet p){
         return this.name.equals(p.name);
     }
-    public int compareTo(Pet p){
+    public int compareTo(Object o){
+        Pet p = (Pet) o;
         String s1, s2;
         s1 = this.getClass() + "".replace("class ","");
         s2 = p.getClass() + "".replace("class ","");
