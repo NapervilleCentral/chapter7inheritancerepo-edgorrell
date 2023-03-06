@@ -14,7 +14,7 @@ public class BugRunner{
     public static void main(String[] args){
         ActorWorld world = new ActorWorld();
         world.add(new Beetle());
-        world.add(new Plant());
         world.show();
     }
 }
+
