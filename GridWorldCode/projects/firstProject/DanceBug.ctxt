@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=DanceBug
+comment1.params=moves
+comment1.target=DanceBug(int[])
+comment2.params=
+comment2.target=void\ act()
+numComments=3

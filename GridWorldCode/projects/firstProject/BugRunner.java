@@ -12,9 +12,15 @@ import info.gridworld.actor.Rock;
  */
 public class BugRunner{
     public static void main(String[] args){
+        int[] moves = new int[50];
+        
+        for(int i = 0; i < 50; i++){
+            moves[i] = (int)(8*Math.random());
+        }
+        
         ActorWorld world = new ActorWorld();
-        world.add(new SBug());
-        world.add(new ZBug(10));
+        
+        world.add(new CircleBug(10));
         world.show();
     }
 }
